@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darksalmon;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+
+}
+
+.lists {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.lists .list {
+    display: block;
+    background-color: rgba(0,0,0,0.05);
+
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 20px;
+    padding: 10px;
+
+    transition: background-color 200ms ease;
+}
+
+.lists .list .item {
+    background-color: gainsboro;
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 200ms ease;
+    list-style: none;
+}
+
+/* Style from the popover */
+
+#bg-overlay {
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
